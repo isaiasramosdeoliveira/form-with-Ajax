@@ -16,11 +16,12 @@ document,addEventListener("click", e =>{
             let data =requeritionForm(action, display)
         }
     }
-    // if(action.classList.contains("enviar")){
-    //     let nome = document.querySelector("#nome")
-    //     let sobrenome = document.querySelector("#sobrenome")
-    //     let idade = document.querySelector("#idade")
-    //     let valid = new Valid()
-    //     valid.validData(nome.value, sobrenome.value, idade.value)
-    // }
+    if(action.classList.contains("enviar")){
+        let nome = document.querySelector("#nome")
+        let sobrenome = document.querySelector("#sobrenome")
+        let idade = document.querySelector("#idade")
+        let senha = document.querySelector("#senha")
+        let valid = new Valid()
+        valid.validData(nome.value, sobrenome.value, idade.value)
+    }
 })

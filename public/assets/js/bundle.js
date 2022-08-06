@@ -29,16 +29,10 @@ var Valid = /*#__PURE__*/function () {
 
   _createClass(Valid, [{
     key: "validData",
-    value: function validData(nome, sobrenome, idade) {
-      if (nome, sobrenome, idade === "") {
-        error.style.display = "block";
-      }
+    value: function validData(nome, sobrenome, senha, idade) {
+      if (nome, sobrenome, senha, idade === "") {}
 
-      if (nome, sobrenome, idade !== "") {
-        error.style.display = "none";
-        success.style.display = "block";
-        _result__WEBPACK_IMPORTED_MODULE_0___default()(nome, sobrenome, idade);
-      }
+      if (nome, sobrenome, senha, idade !== "") {}
     }
   }]);
 
@@ -128,7 +122,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: 20px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 229);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n    margin-bottom: 25px;\r\n}", "",{"version":3,"sources":["webpack://./src/style/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,sHAAsH;AAC1H;AACA;IACI,yBAAyB;AAC7B;AACA;IACI,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,kDAAkD;IAClD,kBAAkB;AACtB;AACA;IACI,mBAAmB;IACnB,cAAc;AAClB;AACA;IACI,qBAAqB;IACrB,yBAAyB;IACzB,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,mDAAmD;AACvD;AACA;IACI,mCAAmC;IACnC,aAAa;AACjB;AACA;IACI,oCAAoC;IACpC,mDAAmD;IACnD,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;AACjB;AACA;IACI,kCAAkC;AACtC;AACA;IACI,gBAAgB;AACpB;AACA;IACI,YAAY;IACZ,YAAY;IACZ,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,mBAAmB;AACvB","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: 20px;\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 229);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n    margin-bottom: 25px;\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: 20px;\r\n    padding: 20px;\r\n    display: flex;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}", "",{"version":3,"sources":["webpack://./src/style/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,sHAAsH;AAC1H;AACA;IACI,yBAAyB;AAC7B;AACA;IACI,2BAA2B;IAC3B,YAAY;IACZ,aAAa;IACb,aAAa;IACb,mBAAmB;IACnB,kDAAkD;IAClD,kBAAkB;AACtB;AACA;IACI,mBAAmB;IACnB,cAAc;AAClB;AACA;IACI,qBAAqB;IACrB,yBAAyB;IACzB,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,mDAAmD;AACvD;AACA;IACI,mCAAmC;IACnC,aAAa;AACjB;AACA;IACI,oCAAoC;IACpC,mDAAmD;IACnD,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;AACjB;AACA;IACI,kCAAkC;AACtC;AACA;IACI,gBAAgB;IAChB,eAAe;AACnB;AACA;IACI,YAAY;IACZ,YAAY;IACZ,2BAA2B;IAC3B,aAAa;IACb,kBAAkB;IAClB,YAAY;AAChB","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: 20px;\r\n    padding: 20px;\r\n    display: flex;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -747,14 +741,16 @@ document, addEventListener("click", function (e) {
     if (tag === "a") {
       var data = (0,_modules_requerition__WEBPACK_IMPORTED_MODULE_1__["default"])(action, display);
     }
-  } // if(action.classList.contains("enviar")){
-  //     let nome = document.querySelector("#nome")
-  //     let sobrenome = document.querySelector("#sobrenome")
-  //     let idade = document.querySelector("#idade")
-  //     let valid = new Valid()
-  //     valid.validData(nome.value, sobrenome.value, idade.value)
-  // }
+  }
 
+  if (action.classList.contains("enviar")) {
+    var nome = document.querySelector("#nome");
+    var sobrenome = document.querySelector("#sobrenome");
+    var idade = document.querySelector("#idade");
+    var senha = document.querySelector("#senha");
+    var valid = new _modules_ValidForm__WEBPACK_IMPORTED_MODULE_2__["default"]();
+    valid.validData(nome.value, sobrenome.value, idade.value);
+  }
 });
 })();
 
