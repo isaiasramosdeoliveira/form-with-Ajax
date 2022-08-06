@@ -40,6 +40,10 @@ main section .picture p{
 main section .form{
     width: 400px;
 }
+main section .form img{
+    width: 100px;
+    margin-top: 50px;
+}
 body main section h1{
     margin-bottom: 20px;
     font-size:40px;
