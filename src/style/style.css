@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: crimson;
+}
+body main section{
+    background-color: aliceblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);
+    text-align: center;
+}
+body main section h1{
+    margin-bottom: 20px;
+    font-size:40px;
+}
+body main section a{
+    text-decoration: none;
+    background-color: crimson;
+    margin-top: 40px;
+    color: aliceblue;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);
+}
+body main section .enviar{
+    background-color: rgb(10, 207, 106);
+}
+main section .display{
+    background-color: rgb(228, 228, 229);
+    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 10px;
+    max-width: 500px;
+    height: 400px;
+}
+main section .requerimento:hover{
+    background-color: rgb(193, 14, 50);
+}
