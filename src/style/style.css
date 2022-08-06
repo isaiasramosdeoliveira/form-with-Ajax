@@ -29,18 +29,29 @@ body main section a{
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);
 }
-body main section .enviar{
+main section .enviar{
     background-color: rgb(10, 207, 106);
+    display: none;
 }
 main section .display{
     background-color: rgb(228, 228, 229);
     box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);
+    padding: 20px;
     border-radius: 10px;
     margin: auto;
     margin-top: 10px;
     max-width: 500px;
     height: 400px;
 }
-main section .requerimento:hover{
+main section .requerition:hover{
     background-color: rgb(193, 14, 50);
 }
+body form label {
+    font-weight: 600;
+  }
+  body form input {
+    border: 0.5px solid;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+  }

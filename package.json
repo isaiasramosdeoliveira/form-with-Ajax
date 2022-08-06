@@ -1,0 +1,32 @@
+{
+  "name": "form_with_ajax",
+  "version": "1.0.0",
+  "description": "Treinando validação de formulário e requisições Ajax tudo junto.",
+  "main": "index.js",
+  "scripts": {
+    "web": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaiasramosdeoliveira/form-with-Ajax.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isaiasramosdeoliveira/form-with-Ajax/issues"
+  },
+  "homepage": "https://github.com/isaiasramosdeoliveira/form-with-Ajax#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "babel-loader": "^8.2.5",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "regenerator-runtime": "^0.13.9"
+  }
+}
