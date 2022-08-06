@@ -9,12 +9,33 @@ body{
 }
 body main section{
     background-color: aliceblue;
-    margin: 20px;
+    margin: auto;
+    max-width: 900px;
     padding: 20px;
     display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border-radius: 10px;
     box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);
     text-align: center;
+}
+main section .picture{
+    margin: 20px;
+    width: 400px;
+}
+main section .picture p{
+    margin-top: 20px;
+    padding: 10px;
+    margin-bottom: -100px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    border: solid;
+}
+main section .form{
+    width: 400px;
 }
 body main section h1{
     margin-bottom: 20px;
@@ -58,4 +79,16 @@ body form input{
     outline: none;
     border-radius: 5px;
     padding: 5px;
+}
+
+@media (max-width: 900px) {
+    main section .picture p{
+        margin-top: 20px;
+        padding: 10px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        border: solid;
+    }
 }
