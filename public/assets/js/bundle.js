@@ -28,6 +28,7 @@ var Valid = /*#__PURE__*/function () {
     value: function validData(nome, sobrenome, senha, idade, msg) {
       if (nome, sobrenome, senha, idade === "") {
         msg.style.backgroundColor = "red";
+        msg.innerText = "dsad";
       }
 
       if (nome, sobrenome, senha, idade !== "") {}
@@ -726,7 +727,7 @@ document, addEventListener("click", function (e) {
     var senha = document.querySelector("#senha");
     var msg = document.querySelector(".msg");
     var valid = new _modules_ValidForm__WEBPACK_IMPORTED_MODULE_2__["default"]();
-    valid.validData(nome.value, sobrenome.value, idade.value, msg);
+    valid.validData(nome.value, sobrenome.value, senha.value, idade.value, msg);
   }
 });
 })();
