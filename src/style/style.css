@@ -32,7 +32,6 @@ main section .picture p{
     border-radius: 5px;
     font-size: 20px;
     font-weight: 600;
-    border: solid;
 }
 main section .form{
     width: 400px;

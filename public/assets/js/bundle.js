@@ -1,4 +1,5 @@
 /******/ (() => { // webpackBootstrap
+/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./src/modules/ValidForm.js":
@@ -7,20 +8,15 @@
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ Valid)
 /* harmony export */ });
-/* harmony import */ var _result__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./result */ "./src/modules/result.js");
-/* harmony import */ var _result__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_result__WEBPACK_IMPORTED_MODULE_0__);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
-
-
 
 var Valid = /*#__PURE__*/function () {
   function Valid() {
@@ -29,7 +25,7 @@ var Valid = /*#__PURE__*/function () {
 
   _createClass(Valid, [{
     key: "validData",
-    value: function validData(nome, sobrenome, senha, idade) {
+    value: function validData(nome, sobrenome, senha, idade, msg) {
       if (nome, sobrenome, senha, idade === "") {
         msg.style.backgroundColor = "red";
       }
@@ -51,7 +47,6 @@ var Valid = /*#__PURE__*/function () {
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ requeritionForm)
@@ -94,23 +89,12 @@ function requeritionForm(action, display) {
 
 /***/ }),
 
-/***/ "./src/modules/result.js":
-/*!*******************************!*\
-  !*** ./src/modules/result.js ***!
-  \*******************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style/style.css":
 /*!*******************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style/style.css ***!
   \*******************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -124,7 +108,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: auto;\r\n    max-width: 900px;\r\n    padding: 20px;\r\n    display: flex;\r\n    margin-top: 100px;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nmain section .picture{\r\n    margin: 20px;\r\n    width: 400px;\r\n}\r\nmain section .picture p{\r\n    margin-top: 20px;\r\n    padding: 10px;\r\n    margin-bottom: -100px;\r\n    border-radius: 5px;\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n    border: solid;\r\n}\r\nmain section .form{\r\n    width: 400px;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n@media (max-width: 900px) {\r\n    main section .picture p{\r\n        margin-top: 20px;\r\n        padding: 10px;\r\n        margin-bottom: 0px;\r\n        border-radius: 5px;\r\n        font-size: 20px;\r\n        font-weight: 600;\r\n        border: solid;\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./src/style/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,sHAAsH;AAC1H;AACA;IACI,yBAAyB;AAC7B;AACA;IACI,2BAA2B;IAC3B,YAAY;IACZ,gBAAgB;IAChB,aAAa;IACb,aAAa;IACb,iBAAiB;IACjB,eAAe;IACf,uBAAuB;IACvB,mBAAmB;IACnB,mBAAmB;IACnB,kDAAkD;IAClD,kBAAkB;AACtB;AACA;IACI,YAAY;IACZ,YAAY;AAChB;AACA;IACI,gBAAgB;IAChB,aAAa;IACb,qBAAqB;IACrB,kBAAkB;IAClB,eAAe;IACf,gBAAgB;IAChB,aAAa;AACjB;AACA;IACI,YAAY;AAChB;AACA;IACI,mBAAmB;IACnB,cAAc;AAClB;AACA;IACI,qBAAqB;IACrB,yBAAyB;IACzB,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,mDAAmD;AACvD;AACA;IACI,mCAAmC;IACnC,aAAa;AACjB;AACA;IACI,oCAAoC;IACpC,mDAAmD;IACnD,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;AACjB;AACA;IACI,kCAAkC;AACtC;AACA;IACI,gBAAgB;IAChB,eAAe;AACnB;AACA;IACI,YAAY;IACZ,YAAY;IACZ,2BAA2B;IAC3B,aAAa;IACb,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI;QACI,gBAAgB;QAChB,aAAa;QACb,kBAAkB;QAClB,kBAAkB;QAClB,eAAe;QACf,gBAAgB;QAChB,aAAa;IACjB;AACJ","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: auto;\r\n    max-width: 900px;\r\n    padding: 20px;\r\n    display: flex;\r\n    margin-top: 100px;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nmain section .picture{\r\n    margin: 20px;\r\n    width: 400px;\r\n}\r\nmain section .picture p{\r\n    margin-top: 20px;\r\n    padding: 10px;\r\n    margin-bottom: -100px;\r\n    border-radius: 5px;\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n    border: solid;\r\n}\r\nmain section .form{\r\n    width: 400px;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n@media (max-width: 900px) {\r\n    main section .picture p{\r\n        margin-top: 20px;\r\n        padding: 10px;\r\n        margin-bottom: 0px;\r\n        border-radius: 5px;\r\n        font-size: 20px;\r\n        font-weight: 600;\r\n        border: solid;\r\n    }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: auto;\r\n    max-width: 900px;\r\n    padding: 20px;\r\n    display: flex;\r\n    margin-top: 100px;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nmain section .picture{\r\n    margin: 20px;\r\n    width: 400px;\r\n}\r\nmain section .picture p{\r\n    margin-top: 20px;\r\n    padding: 10px;\r\n    margin-bottom: -100px;\r\n    border-radius: 5px;\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n}\r\nmain section .form{\r\n    width: 400px;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n@media (max-width: 900px) {\r\n    main section .picture p{\r\n        margin-top: 20px;\r\n        padding: 10px;\r\n        margin-bottom: 0px;\r\n        border-radius: 5px;\r\n        font-size: 20px;\r\n        font-weight: 600;\r\n        border: solid;\r\n    }\r\n}", "",{"version":3,"sources":["webpack://./src/style/style.css"],"names":[],"mappings":"AAAA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,sHAAsH;AAC1H;AACA;IACI,yBAAyB;AAC7B;AACA;IACI,2BAA2B;IAC3B,YAAY;IACZ,gBAAgB;IAChB,aAAa;IACb,aAAa;IACb,iBAAiB;IACjB,eAAe;IACf,uBAAuB;IACvB,mBAAmB;IACnB,mBAAmB;IACnB,kDAAkD;IAClD,kBAAkB;AACtB;AACA;IACI,YAAY;IACZ,YAAY;AAChB;AACA;IACI,gBAAgB;IAChB,aAAa;IACb,qBAAqB;IACrB,kBAAkB;IAClB,eAAe;IACf,gBAAgB;AACpB;AACA;IACI,YAAY;AAChB;AACA;IACI,mBAAmB;IACnB,cAAc;AAClB;AACA;IACI,qBAAqB;IACrB,yBAAyB;IACzB,gBAAgB;IAChB,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,mDAAmD;AACvD;AACA;IACI,mCAAmC;IACnC,aAAa;AACjB;AACA;IACI,oCAAoC;IACpC,mDAAmD;IACnD,aAAa;IACb,mBAAmB;IACnB,YAAY;IACZ,gBAAgB;IAChB,gBAAgB;IAChB,aAAa;AACjB;AACA;IACI,kCAAkC;AACtC;AACA;IACI,gBAAgB;IAChB,eAAe;AACnB;AACA;IACI,YAAY;IACZ,YAAY;IACZ,2BAA2B;IAC3B,aAAa;IACb,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI;QACI,gBAAgB;QAChB,aAAa;QACb,kBAAkB;QAClB,kBAAkB;QAClB,eAAe;QACf,gBAAgB;QAChB,aAAa;IACjB;AACJ","sourcesContent":["*{\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;\r\n}\r\nbody{\r\n    background-color: crimson;\r\n}\r\nbody main section{\r\n    background-color: aliceblue;\r\n    margin: auto;\r\n    max-width: 900px;\r\n    padding: 20px;\r\n    display: flex;\r\n    margin-top: 100px;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    align-items: center;\r\n    border-radius: 10px;\r\n    box-shadow: 20px 20px 10px rgba(140, 3, 28, 0.495);\r\n    text-align: center;\r\n}\r\nmain section .picture{\r\n    margin: 20px;\r\n    width: 400px;\r\n}\r\nmain section .picture p{\r\n    margin-top: 20px;\r\n    padding: 10px;\r\n    margin-bottom: -100px;\r\n    border-radius: 5px;\r\n    font-size: 20px;\r\n    font-weight: 600;\r\n}\r\nmain section .form{\r\n    width: 400px;\r\n}\r\nbody main section h1{\r\n    margin-bottom: 20px;\r\n    font-size:40px;\r\n}\r\nbody main section a{\r\n    text-decoration: none;\r\n    background-color: crimson;\r\n    margin-top: 40px;\r\n    color: aliceblue;\r\n    font-weight: 600;\r\n    padding: 10px;\r\n    border-radius: 10px;\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.495);\r\n}\r\nmain section .enviar{\r\n    background-color: rgb(10, 207, 106);\r\n    display: none;\r\n}\r\nmain section .display{\r\n    background-color: rgb(228, 228, 228);\r\n    box-shadow: 5px 5px 10px rgba(143, 143, 143, 0.395);\r\n    padding: 20px;\r\n    border-radius: 10px;\r\n    margin: auto;\r\n    margin-top: 10px;\r\n    max-width: 500px;\r\n    height: 400px;\r\n}\r\nmain section .requerition:hover{\r\n    background-color: rgb(193, 14, 50);\r\n}\r\nbody form label {\r\n    font-weight: 600;\r\n    font-size: 20px;\r\n}\r\nbody form input{\r\n    border: none;\r\n    width: 250px;\r\n    background-color: aliceblue;\r\n    outline: none;\r\n    border-radius: 5px;\r\n    padding: 5px;\r\n}\r\n\r\n@media (max-width: 900px) {\r\n    main section .picture p{\r\n        margin-top: 20px;\r\n        padding: 10px;\r\n        margin-bottom: 0px;\r\n        border-radius: 5px;\r\n        font-size: 20px;\r\n        font-weight: 600;\r\n        border: solid;\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -137,7 +121,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, "*{\r\n    margin: 0;\r\n    padding: 0
   \*****************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /*
@@ -249,7 +232,6 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 module.exports = function (item) {
@@ -281,7 +263,6 @@ module.exports = function (item) {
   \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -336,7 +317,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -450,7 +430,6 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 var memo = {};
@@ -499,7 +478,6 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -520,7 +498,6 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -542,7 +519,6 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -622,7 +598,6 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -716,9 +691,8 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -750,8 +724,9 @@ document, addEventListener("click", function (e) {
     var sobrenome = document.querySelector("#sobrenome");
     var idade = document.querySelector("#idade");
     var senha = document.querySelector("#senha");
+    var msg = document.querySelector(".msg");
     var valid = new _modules_ValidForm__WEBPACK_IMPORTED_MODULE_2__["default"]();
-    valid.validData(nome.value, sobrenome.value, idade.value);
+    valid.validData(nome.value, sobrenome.value, idade.value, msg);
   }
 });
 })();
