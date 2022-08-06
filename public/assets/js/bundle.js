@@ -30,7 +30,9 @@ var Valid = /*#__PURE__*/function () {
   _createClass(Valid, [{
     key: "validData",
     value: function validData(nome, sobrenome, senha, idade) {
-      if (nome, sobrenome, senha, idade === "") {}
+      if (nome, sobrenome, senha, idade === "") {
+        msg.style.backgroundColor = "red";
+      }
 
       if (nome, sobrenome, senha, idade !== "") {}
     }
