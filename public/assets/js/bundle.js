@@ -33,12 +33,12 @@ var Valid = /*#__PURE__*/function () {
       }
 
       if (nome === "") {
-        msg.innerText = "Preencha os campos.";
+        msg.innerText = "Preencha com seu nome.";
       }
 
       if (nome !== "" && sobrenome !== "" && senha !== "" && idade !== "") {
         msg.style.backgroundColor = "#3EC18F";
-        msg.style.color = "#8C1313";
+        msg.style.color = "#1B895C";
         msg.innerText = "Cadastrado.";
       }
     }
