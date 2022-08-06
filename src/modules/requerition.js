@@ -1,3 +1,4 @@
+
 export default function requeritionForm(action, display){
     let request = obj => {
         let xhr = new XMLHttpRequest()

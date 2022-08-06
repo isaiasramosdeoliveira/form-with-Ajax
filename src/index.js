@@ -1,3 +1,4 @@
+import "./style/style.css"
 import requeritionForm from "./modules/requerition"
 import Valid from "./modules/ValidForm"
 

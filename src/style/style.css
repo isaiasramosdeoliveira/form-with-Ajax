@@ -48,10 +48,12 @@ main section .requerition:hover{
 }
 body form label {
     font-weight: 600;
-  }
-  body form input {
-    border: 0.5px solid;
+}
+body form input{
+    border: none;
+    width: 250px;
+    outline: none;
     border-radius: 5px;
     padding: 5px;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 25px;
+}
