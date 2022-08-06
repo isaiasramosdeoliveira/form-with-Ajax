@@ -722,6 +722,7 @@ document, addEventListener("click", function (e) {
     var sobrenome = document.querySelector("#sobrenome");
     var idade = document.querySelector("#idade");
     var senha = document.querySelector("#senha");
+    var msg = document.querySelector(".msg");
     var valid = new _modules_ValidForm__WEBPACK_IMPORTED_MODULE_2__["default"]();
     valid.validData(nome.value, sobrenome.value, idade.value);
   }

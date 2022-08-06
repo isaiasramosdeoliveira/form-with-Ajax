@@ -21,6 +21,7 @@ document,addEventListener("click", e =>{
         let sobrenome = document.querySelector("#sobrenome")
         let idade = document.querySelector("#idade")
         let senha = document.querySelector("#senha")
+        let msg = document.querySelector(".msg")
         let valid = new Valid()
         valid.validData(nome.value, sobrenome.value, idade.value)
     }
