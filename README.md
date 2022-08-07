@@ -1,5 +1,5 @@
 # Formulário com Ajax
-<p>Treinando validação de formulário e requisições Ajax tudo junto.</p>
+<p>Treinando validação de formulário e requisições Ajax.</p>
 <p>Link para o projeto: <a href="https://formwithajax.netlify.app/">Ver projeto<a>
 
 ## O que é Ajax?
