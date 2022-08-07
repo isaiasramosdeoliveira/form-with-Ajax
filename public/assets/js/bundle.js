@@ -26,41 +26,19 @@ var Valid = /*#__PURE__*/function () {
   _createClass(Valid, [{
     key: "validData",
     value: function validData(nome, sobrenome, senha, idade, msg) {
-      if (nome === "" && sobrenome === "" && senha === "" && idade === "") {
-        msg.style.backgroundColor = "#D85050";
-        msg.style.color = "#8C1313";
-        msg.innerText = "Preencha os campos.";
-      }
+      return new Promise(function (resolve, reject) {
+        if (nome === "" || sobrenome === "" || senha === "" || idade === "") {
+          msg.style.backgroundColor = "#D85050";
+          msg.style.color = "#8C1313";
+          reject(msg.innerText = "Preencha todos os campos.");
+        }
 
-      if (nome === "") {
-        msg.style.backgroundColor = "#D85050";
-        msg.style.color = "#8C1313";
-        msg.innerText = "Preencha com seu nome.";
-      }
-
-      if (idade === "") {
-        msg.style.backgroundColor = "#D85050";
-        msg.style.color = "#8C1313";
-        msg.innerText = "Preencha com sua idade.";
-      }
-
-      if (sobrenome === "") {
-        msg.style.backgroundColor = "#D85050";
-        msg.style.color = "#8C1313";
-        msg.innerText = "Preencha com seu sobrenome.";
-      }
-
-      if (senha === "") {
-        msg.style.backgroundColor = "#D85050";
-        msg.style.color = "#8C1313";
-        msg.innerText = "Preencha com sua senha";
-      }
-
-      if (nome !== "" && sobrenome !== "" && senha !== "" && idade !== "") {
-        msg.style.backgroundColor = "#3EC18F";
-        msg.style.color = "#1B895C";
-        msg.innerText = "Cadastrado.";
-      }
+        if (nome !== "" && sobrenome !== "" && senha !== "" && idade !== "") {
+          msg.style.backgroundColor = "#3EC18F";
+          msg.style.color = "#1B895C";
+          resolve(msg.innerText = "Cadastrado.");
+        }
+      });
     }
   }]);
 
