@@ -44,7 +44,7 @@ main section .form{
     width: 400px;
 }
 main section .form img{
-    width: 100px;
+    width: 150px;
     margin-top: 50px;
 }
 body main section h1{
@@ -75,6 +75,13 @@ main section .display{
     margin-top: 10px;
     max-width: 500px;
     height: 400px;
+}
+main section .display h3{
+    color: aliceblue;
+    font-size: 35px;
+}
+main section .display p{
+    color: aliceblue;
 }
 main section .requerition:hover{
     background-color: rgb(193, 14, 50);

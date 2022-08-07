@@ -1,4 +1,3 @@
-
 export default class Valid{
     validData(nome, sobrenome, senha, idade, msg){
         return new Promise((resolve, reject)=>{
