@@ -10,11 +10,11 @@ body{
 body main section{
     background-color: aliceblue;
     margin: auto;
-    max-width: 900px;
+    max-width: 1000px;
     padding: 30px;
     display: flex;
-    margin-top: 20px;
     flex-wrap: wrap;
+    height: 100vh;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
